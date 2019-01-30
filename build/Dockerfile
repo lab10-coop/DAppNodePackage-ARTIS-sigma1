@@ -24,5 +24,5 @@ WORKDIR /root/sigma1
 VOLUME /root/sigma1/data
 
 # Run app.py when the container launches
-ENTRYPOINT ./parity -c node.toml --port=40303 --jsonrpc-interface=all --ws-interface=all $EXTRA_OPTS
+ENTRYPOINT ./parity -c node.toml --port=40303 --jsonrpc-interface=all --jsonrpc-apis=all --jsonrpc-hosts=all --jsonrpc-cors=all --ws-interface=all --ws-apis=all --ws-origins=all --ws-hosts=all $EXTRA_OPTS
 #CMD ["/bin/sh"]

@@ -1,7 +1,7 @@
 version: '3.4'
 services:
     artis-sigma1.public.dappnode.eth:
-        image: 'artis-sigma1.public.dappnode.eth:0.0.7'
+        image: 'artis-sigma1.public.dappnode.eth:0.0.8'
         build: ./build
         volumes:
             - 'artis-sigma1:/root/sigma1/data'

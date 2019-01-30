@@ -1,13 +1,13 @@
 {
   "name": "artis-sigma1.public.dappnode.eth",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "ARTIS sigma1 mainnet full node. Provided Ports RPC @ 8545, WebSockets @ 8546",
   "avatar": "avatar.png",
   "type": "library",
   "image": {
-    "path": "artis-sigma1.public.dappnode.eth_0.0.7.tar.xz",
-    "hash": "/ipfs/QmZCXPV1e1aggUNJXGeL8AJ1JRSzsNTik6LFFhWr61CRvm",
-    "size": 56880563,
+    "path": "artis-sigma1.public.dappnode.eth_0.0.8.tar.xz",
+    "hash": "/ipfs/QmRMVFHD3BQBQhTm6GjoiJ5kkQienJoNvnA4xMaSwoRNbu",
+    "size": 57639513,
     "restart": "always",
     "volumes": [
       "artis-sigma1:/root/sigma1/data"
