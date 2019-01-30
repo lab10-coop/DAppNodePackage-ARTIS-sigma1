@@ -1,0 +1,42 @@
+{
+  "name": "artis-sigma1.public.dappnode.eth",
+  "version": "0.0.7",
+  "description": "ARTIS sigma1 mainnet full node. Provided Ports RPC @ 8545, WebSockets @ 8546",
+  "avatar": "avatar.png",
+  "type": "library",
+  "image": {
+    "path": "artis-sigma1.public.dappnode.eth_0.0.7.tar.xz",
+    "hash": "/ipfs/QmZCXPV1e1aggUNJXGeL8AJ1JRSzsNTik6LFFhWr61CRvm",
+    "size": 56880563,
+    "restart": "always",
+    "volumes": [
+      "artis-sigma1:/root/sigma1/data"
+    ],
+    "environment": [
+      "EXTRA_OPTS"
+    ],
+    "ports": [
+      "40303:40303",
+      "40303:40303/udp"
+    ],
+    "keywords": [
+      "ARTIS",
+      "sigma1",
+      "proof-of-authority",
+      "poa",
+      "rpc",
+      "8545",
+      "8546"
+    ]
+  },
+  "author": "lab10 collective <dappnode@lab10.coop> (https://lab10.io)",
+  "contributors": [
+    "Thomas Haller <thomashaller@lab10.coop>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lab10-coop/DAppNodePackage-ARTIS-sigma1.git"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {}
+}
