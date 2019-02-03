@@ -1,0 +1,290 @@
+inux@localhost:~/github/DAppNodePackage-ARTIS-sigma1> dappnodesdk publish minor
+Building Dockerfile to image artis-sigma1.public.dappnode.eth:0.1.0...
+Building artis-sigma1.public.dappnode.eth
+Step 1/13 : FROM ubuntu:18.04
+ ---> 20bb25d32758
+Step 2/13 : WORKDIR /root
+ ---> Using cache
+ ---> 4caa357e0403
+Step 3/13 : RUN apt-get update
+ ---> Using cache
+ ---> 42d56a2d0752
+Step 4/13 : RUN apt-get upgrade -y
+ ---> Using cache
+ ---> eff01c9a2b6a
+Step 5/13 : RUN apt-get install apt-utils git-core curl -y
+ ---> Using cache
+ ---> 7da7bd32c9dc
+Step 6/13 : RUN git clone https://github.com/lab10-coop/sigma1 &&     cd sigma1  &&     ./download-parity.sh
+ ---> Using cache
+ ---> 4a7d7d46d592
+Step 7/13 : RUN apt-get install net-tools -y
+ ---> Using cache
+ ---> 2c1baabc827a
+Step 8/13 : EXPOSE 40303
+ ---> Using cache
+ ---> 393c82bebe9b
+Step 9/13 : EXPOSE 8545
+ ---> Using cache
+ ---> 41658a99304e
+Step 10/13 : EXPOSE 8546
+ ---> Using cache
+ ---> 0a8e6fbb3fe5
+Step 11/13 : WORKDIR /root/sigma1
+ ---> Using cache
+ ---> 9dff26f64684
+Step 12/13 : VOLUME /root/sigma1/data
+ ---> Using cache
+ ---> 99a33ae908b5
+Step 13/13 : ENTRYPOINT ./parity -c node.toml --port=40303 --jsonrpc-interface=all --jsonrpc-apis=all --jsonrpc-hosts=all --jsonrpc-cors=all --ws-interface=all --ws-apis=all --ws-origins=all --ws-hosts=all $EXTRA_OPTS
+ ---> Running in 25e074c6c43c
+Removing intermediate container 25e074c6c43c
+ ---> feebc3304d4a
+
+Successfully built feebc3304d4a
+Successfully tagged artis-sigma1.public.dappnode.eth:0.1.0
+Saving docker image artis-sigma1.public.dappnode.eth:0.1.0 to file ./build_0.1.0/artis-sigma1.public.dappnode.eth_0.1.0.tar.xz...
+  100 %        54.2 MiB / 243.5 MiB = 0.223   1.6 MiB/s       2:31             
+Uploading docker image file ./build_0.1.0/artis-sigma1.public.dappnode.eth_0.1.0.tar.xz to IPFS...
+Uploading... 0.46%
+Uploading... 0.92%
+Uploading... 1.38%
+Uploading... 1.85%
+Uploading... 2.31%
+Uploading... 2.77%
+Uploading... 3.23%
+Uploading... 3.69%
+Uploading... 4.15%
+Uploading... 4.61%
+Uploading... 5.08%
+Uploading... 5.54%
+Uploading... 6.00%
+Uploading... 6.46%
+Uploading... 6.92%
+Uploading... 7.38%
+Uploading... 7.84%
+Uploading... 8.30%
+Uploading... 8.77%
+Uploading... 9.23%
+Uploading... 9.69%
+Uploading... 10.15%
+Uploading... 10.61%
+Uploading... 11.07%
+Uploading... 11.53%
+Uploading... 12.00%
+Uploading... 12.46%
+Uploading... 12.92%
+Uploading... 13.38%
+Uploading... 13.84%
+Uploading... 14.30%
+Uploading... 14.76%
+Uploading... 15.23%
+Uploading... 15.69%
+Uploading... 16.15%
+Uploading... 16.61%
+Uploading... 17.07%
+Uploading... 17.53%
+Uploading... 17.99%
+Uploading... 18.45%
+Uploading... 18.92%
+Uploading... 19.38%
+Uploading... 19.84%
+Uploading... 20.30%
+Uploading... 20.76%
+Uploading... 21.22%
+Uploading... 21.68%
+Uploading... 22.15%
+Uploading... 22.61%
+Uploading... 23.07%
+Uploading... 23.53%
+Uploading... 23.99%
+Uploading... 24.45%
+Uploading... 24.91%
+Uploading... 25.38%
+Uploading... 25.84%
+Uploading... 26.30%
+Uploading... 26.76%
+Uploading... 27.22%
+Uploading... 27.68%
+Uploading... 28.14%
+Uploading... 28.61%
+Uploading... 29.07%
+Uploading... 29.53%
+Uploading... 29.99%
+Uploading... 30.45%
+Uploading... 30.91%
+Uploading... 31.37%
+Uploading... 31.83%
+Uploading... 32.30%
+Uploading... 32.76%
+Uploading... 33.22%
+Uploading... 33.68%
+Uploading... 34.14%
+Uploading... 34.60%
+Uploading... 35.06%
+Uploading... 35.53%
+Uploading... 35.99%
+Uploading... 36.45%
+Uploading... 36.91%
+Uploading... 37.37%
+Uploading... 37.83%
+Uploading... 38.29%
+Uploading... 38.76%
+Uploading... 39.22%
+Uploading... 39.68%
+Uploading... 40.14%
+Uploading... 40.60%
+Uploading... 41.06%
+Uploading... 41.52%
+Uploading... 41.99%
+Uploading... 42.45%
+Uploading... 42.91%
+Uploading... 43.37%
+Uploading... 43.83%
+Uploading... 44.29%
+Uploading... 44.75%
+Uploading... 45.21%
+Uploading... 45.68%
+Uploading... 46.14%
+Uploading... 46.60%
+Uploading... 47.06%
+Uploading... 47.52%
+Uploading... 47.98%
+Uploading... 48.44%
+Uploading... 48.91%
+Uploading... 49.37%
+Uploading... 49.83%
+Uploading... 50.29%
+Uploading... 50.75%
+Uploading... 51.21%
+Uploading... 51.67%
+Uploading... 52.14%
+Uploading... 52.60%
+Uploading... 53.06%
+Uploading... 53.52%
+Uploading... 53.98%
+Uploading... 54.44%
+Uploading... 54.90%
+Uploading... 55.36%
+Uploading... 55.83%
+Uploading... 56.29%
+Uploading... 56.75%
+Uploading... 57.21%
+Uploading... 57.67%
+Uploading... 58.13%
+Uploading... 58.59%
+Uploading... 59.06%
+Uploading... 59.52%
+Uploading... 59.98%
+Uploading... 60.44%
+Uploading... 60.90%
+Uploading... 61.36%
+Uploading... 61.82%
+Uploading... 62.29%
+Uploading... 62.75%
+Uploading... 63.21%
+Uploading... 63.67%
+Uploading... 64.13%
+Uploading... 64.59%
+Uploading... 65.05%
+Uploading... 65.52%
+Uploading... 65.98%
+Uploading... 66.44%
+Uploading... 66.90%
+Uploading... 67.36%
+Uploading... 67.82%
+Uploading... 68.28%
+Uploading... 68.74%
+Uploading... 69.21%
+Uploading... 69.67%
+Uploading... 70.13%
+Uploading... 70.59%
+Uploading... 71.05%
+Uploading... 71.51%
+Uploading... 71.97%
+Uploading... 72.44%
+Uploading... 72.90%
+Uploading... 73.36%
+Uploading... 73.82%
+Uploading... 74.28%
+Uploading... 74.74%
+Uploading... 75.20%
+Uploading... 75.67%
+Uploading... 76.13%
+Uploading... 76.59%
+Uploading... 77.05%
+Uploading... 77.51%
+Uploading... 77.97%
+Uploading... 78.43%
+Uploading... 78.90%
+Uploading... 79.36%
+Uploading... 79.82%
+Uploading... 80.28%
+Uploading... 80.74%
+Uploading... 81.20%
+Uploading... 81.66%
+Uploading... 82.12%
+Uploading... 82.59%
+Uploading... 83.05%
+Uploading... 83.51%
+Uploading... 83.97%
+Uploading... 84.43%
+Uploading... 84.89%
+Uploading... 85.35%
+Uploading... 85.82%
+Uploading... 86.28%
+Uploading... 86.74%
+Uploading... 87.20%
+Uploading... 87.66%
+Uploading... 88.12%
+Uploading... 88.58%
+Uploading... 89.05%
+Uploading... 89.51%
+Uploading... 89.97%
+Uploading... 90.43%
+Uploading... 90.89%
+Uploading... 91.35%
+Uploading... 91.81%
+Uploading... 92.27%
+Uploading... 92.74%
+Uploading... 93.20%
+Uploading... 93.66%
+Uploading... 94.12%
+Uploading... 94.58%
+Uploading... 95.04%
+Uploading... 95.50%
+Uploading... 95.97%
+Uploading... 96.43%
+Uploading... 96.89%
+Uploading... 97.35%
+Uploading... 97.81%
+Uploading... 98.27%
+Uploading... 98.73%
+Uploading... 99.20%
+Uploading... 99.66%
+Uploading... 100.00%
+Manifest uploaded: /ipfs/QmZxNSxbKYqRFAsV68DZpW6oDpS5hBdeg5T6H863Ymkt93
+? A new Aragon Package Manager Repo for artis-sigma1.public.dappnode.eth will be created. 
+You must specify the developer address that will control it (Or use the --developer_address, -a flag): 0xb200AaeCF8C0e0d91c6468d4F2ff61cB01CD3530
+
+Transaction successfully generated.
+You must execute this transaction in mainnet to publish a new version of this DNP
+To be able to update this repository you must be the authorized dev.
+
+########################### TX data #############################################
+
+  To: 0x9F85AE5aeFE4a3eFF39d9A44212aae21Dd15079A
+  Value: 0
+  Data: 
+0x32ab6af000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000b200aaecf8c0e0d91c6468d4f2ff61cb01cd353000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000c61727469732d7369676d6131000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000342f697066732f516d5a784e5378624b597152464173563638445a7057366f44705335684264656735543648383633596d6b743933000000000000000000000000
+  Gas limit: 1100000
+
+#################################################################################
+
+  You can execute this transaction with Metamask by following this pre-filled link
+
+  http://my.admin.dnp.dappnode.eth/#/sdk/publish/r=artis-sigma1.public.dappnode.eth&v=0.1.0&h=%2Fipfs%2FQmZxNSxbKYqRFAsV68DZpW6oDpS5hBdeg5T6H863Ymkt93&d=0xb200AaeCF8C0e0d91c6468d4F2ff61cB01CD3530
+
+#################################################################################
+
+
