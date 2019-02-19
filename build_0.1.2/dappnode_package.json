@@ -6,7 +6,7 @@
   "type": "library",
   "image": {
     "path": "artis-sigma1.public.dappnode.eth_0.1.2.tar.xz",
-    "hash": "/ipfs/QmRSciJrfugQohkbsb9k4inPaNGtTB7bk9Wxxc7Rnczv5A",
+    "hash": "/ipfs/QmSpdWXSSyhvzB8Khg2etSBp8i6xWA5GrNqYsJEFC8jtQD",
     "size": 56831623,
     "restart": "always",
     "volumes": [
