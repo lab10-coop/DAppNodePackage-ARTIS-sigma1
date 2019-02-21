@@ -4,6 +4,7 @@ FROM ubuntu:18.04 as builder
 WORKDIR /root
 
 RUN apt-get update
+RUN apt-get upgrade -y
 RUN apt-get install apt-utils git-core curl -y
 RUN git clone https://github.com/lab10-coop/sigma1 && \
     cd sigma1  && \
