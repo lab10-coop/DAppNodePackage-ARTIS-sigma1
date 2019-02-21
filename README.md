@@ -54,20 +54,6 @@ You can write extra options on the adminui or edit the `docker-compose.yml` and 
 ```
 Look up https://wiki.parity.io/Configuring-Parity-Ethereum#cli-options-for-parity-ethereum-client for more details.
 
-## Connect using web3js
-
-If the package is running and you're connected to your dappnode you can use:
-```
-var Web3 = require('web3');
-var web3 = new Web3('ws://artis-sigma1.public.dappnode.eth:8546')
-web3.eth.getBlockNumber().then(console.log)
-```
-In case you are running it locally:
-```
-var Web3 = require('web3');
-var web3 = new Web3('ws://127.0.0.1:8546')
-web3.eth.getBlockNumber().then(console.log)
-```
 
 ## Building as DAppnode Package
 
@@ -85,6 +71,21 @@ dappnodesdk build
 to test your newly build, use the given IPFS Hash to install the DNP on your Dappnode.
 
 For more information about building and deploying DAppnode Packages, checkout the [DAppNodeSDK](https://github.com/dappnode/DAppNodeSDK) repository.
+
+## Connect using web3js
+
+If the package is running and you're connected to your dappnode you can use:
+```
+var Web3 = require('web3');
+var web3 = new Web3('ws://artis-sigma1.public.dappnode.eth:8546')
+web3.eth.getBlockNumber().then(console.log)
+```
+In case you are running it locally:
+```
+var Web3 = require('web3');
+var web3 = new Web3('ws://127.0.0.1:8546')
+web3.eth.getBlockNumber().then(console.log)
+```
 
 ## License
 
