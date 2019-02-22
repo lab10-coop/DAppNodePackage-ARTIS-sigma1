@@ -1,4 +1,4 @@
-# ARTIS sigma1 Mainnet DAppNode Package
+# ARTIS sigma1 DAppNode Package
 
 [![DAppNodeStore Available](https://img.shields.io/badge/DAppNodeStore-Available-brightgreen.svg)](http://my.admin.dnp.dappnode.eth/#/installer/artis-sigma1.public.dappnode.eth)
 
