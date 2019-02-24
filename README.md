@@ -6,7 +6,7 @@ Provides an [ARTIS](https://artis.eco) sigma1 Fullnode as a [DAppNode Package](h
 
 ## Install on DAppNode
 
-To install the latest official ARTIS package on a DAppNode, make sure you are connected to its VPN and visit `http://my.admin.dnp.dappnode.eth/#/installer/artis-sigma1.public.dappnode.eth`.
+To install the latest official ARTIS package on a DAppNode, make sure you are connected to its VPN and visit [http://my.admin.dnp.dappnode.eth/#/installer/artis-sigma1.public.dappnode.eth](http://my.admin.dnp.dappnode.eth/#/installer/artis-sigma1.public.dappnode.eth).
 
 You can add extra options in the DAppNode UI such as:
 ```
